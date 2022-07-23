@@ -19,7 +19,12 @@ app.use(bodyParser.urlencoded({
    extended: true
 }));
 app.use(bodyParser.json());
-app.use(helmet());
+//app.use(helmet());
+app.use(
+   helmet({
+     contentSecurityPolicy: false,
+   })
+ );
 
 //Routes
 app.use('/api', routes);
