@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`to match Search snapshot 1`] = `
+<div
+  className="search-container"
+>
+  <form
+    className=""
+  >
+     
+    <div
+      className="form-group search-box"
+    >
+      <input
+        className="search-bar form-control"
+        name="term"
+        placeholder="Search..."
+        type="text"
+      />
+    </div>
+    <div
+      className="form-group filter"
+    >
+      <select
+        className="form-select"
+      >
+         
+        <option
+          value="all"
+        >
+          All media
+        </option>
+        <option
+          value="movie"
+        >
+          Movie
+        </option>
+        <option
+          value="podcast"
+        >
+          Podcast
+        </option>
+        <option
+          value="music"
+        >
+          Music
+        </option>
+        <option
+          value="musicVideo"
+        >
+          Music video
+        </option>
+        <option
+          value="audiobook"
+        >
+          Audio book
+        </option>
+        <option
+          value="shortFilm"
+        >
+          Short film
+        </option>
+        <option
+          value="tvShow"
+        >
+          TV show
+        </option>
+        <option
+          value="software"
+        >
+          Software
+        </option>
+        <option
+          value="ebook"
+        >
+          Ebook
+        </option>
+      </select>
+    </div>
+    <div
+      className="submit-btn"
+    >
+      <button
+        className="btn btn-secondary"
+        disabled={false}
+        type="submit"
+      >
+        Search
+      </button>
+    </div>
+  </form>
+</div>
+`;

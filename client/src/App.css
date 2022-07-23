@@ -1,0 +1,276 @@
+.App {
+  text-align: center;
+  font-size: 17px;
+  background-image: linear-gradient(to right, rgba(247, 239, 239, 0.951), rgb(248, 242, 232), rgb(252, 252, 236),
+   rgb(242, 251, 242), rgb(241, 241, 253), rgb(244, 236, 251), rgb(252, 240, 252));
+  min-height: 100vh;
+}
+
+/******************HEADER*******************************/
+
+/*Header section styled*/
+.header-container {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 90px;
+  background-color: rgba(80, 9, 80, 0.797)
+}
+/*Buttons styled and customised*/
+.header-container .btn,
+.header-container .btn a {
+  width: 120px;
+  font-size: 17px;
+  text-decoration: none;
+  color: #ffff;
+}
+/*Heading*/
+.header-container .header {
+  font-size: 28px;
+}
+
+/******************SEARCH*******************************/
+
+/* search container styled */
+.search-container {
+  background-color: white;
+  width: 65%;
+  margin: auto;
+  padding: 15px;
+  border-radius: 25px;
+  box-shadow: 0 5px 5px 0 #00000030;
+  border: currentColor;
+}
+/* Styled and customised the form */
+form {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+/* search box */
+.search-box {
+  width: 45%;
+  max-width: 350px;
+}
+/* dropdown */
+.filter {
+  width: 30%;
+  max-width: 200px;
+}
+/* Styled the submit button and gave it a width */
+.submit-btn .btn {
+  width: 100px;
+}
+
+/******************HOME*******************************/
+
+/* Header section styled */
+.header-section {
+  width: 100%;
+  background-color: #171b16;
+  position: fixed;
+}
+/* Search otput section customised */
+.search-and-output {
+  padding: 85px 60px 30px;
+}
+/* search section */
+.search-container-section {
+  margin-bottom: 15px;
+}
+
+/******************FAVOURITES*******************************/
+
+/* Styled the button and spacer */
+.favourites-container .back-btn,
+.favourites-container .spacer {
+   width: 120px;
+}
+/* Favourites container given a padding*/
+.favourites {
+   padding: 90px 60px 30px;
+}
+/* No favourites text customised */
+.favourites .empty {
+   width: 100%;
+   height: 200px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 24px;
+}
+/* Favourites display customised*/
+.fav-items {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+}
+
+/******************FAVITEM*******************************/
+
+/* Favourite item styled */
+.fav-item {
+  display: flex;
+  align-items: center;
+  width: 45%;
+  background-color: #ffffffd8;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px 0 #00000030;
+  border: currentColor;
+  gap: 15px;
+}
+/* No artwork text styled */
+.fav-item .img-text {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000030;
+}
+/* Item info section customised */
+.fav-item .item-info {
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+}
+.fav-item .item-info span {
+  font-weight: 500;
+}
+/* Buttons container styled*/
+.fav-item .btns {
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+/* Delete/trash icon customised*/
+.fav-item .remove-btn button {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  color: red;
+}
+.fav-item .remove-btn button:hover {
+  color: rgb(168, 4, 4);
+  background-color: transparent;
+}
+/* View more button */
+.fav-item .view-more-btn button {
+  padding: 0px 5px;
+  font-size: 14px;
+}
+
+/****************ITEM***************************/
+
+/* Style the overall item */
+.output-item {
+  display: flex;
+  align-items: center;
+  width: 45%;
+  background-color: rgba(251, 243, 243, 0.842);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px 0 #56171730;
+  border: currentColor;
+  gap: 15px;
+}
+/* Style the text that will be displayed if there is no artwork */
+.output-item .img-text {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000030;
+}
+/* Style the item info section */
+.output-item .item-info {
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+}
+/* Style the labels of the item */
+.output-item .item-info span {
+  font-weight: 500;
+}
+/* Style the container with the buttons */
+.output-item .btns {
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+/* Style the heart icon */
+.output-item .heart-btn button {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  color: #4d4c4c35;
+}
+.output-item .heart-btn .clicked {
+  color: red;
+}
+.output-item .heart-btn button:hover {
+  color: #c40000;
+  background-color: transparent;
+}
+/* Style the button that helps you view more info about the item */
+.output-item .view-more-btn button {
+  padding: 0px 5px;
+  font-size: 14px;
+}
+
+/*****************OUTPUT***********************/
+
+/* Style the error and welcome text */
+.error-text,
+.welcome-text {
+   width: 100%;
+   height: 200px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 24px;
+}
+/* Style the outputted item */
+.output-items {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+}
+
+/********************HELP********************/
+
+/* Style the overall sidebar */
+.offcanvas-start {
+  min-width: 500px;
+}
+/* Style the title of the sidebar */
+.offcanvas-start .offcanvas-title {
+  font-size: 25px;
+}
+/* Style the title of each section */
+.offcanvas-start .title {
+  font-weight: 500;
+}
+/* Style the heart and trash icons */
+.help-add-fav .fa-heart {
+  color: #00000035;
+}
+.help-remove-fav .fa-trash,
+.help-remove-fav-home .fa-heart {
+  color: red;
+}
+
+/*Sources used in executing the task include Hyperiondev notes and vedios, previous tasks, You Tube, Google.com, 
+StackOverflow, Github, Geeksforgeeks*/
