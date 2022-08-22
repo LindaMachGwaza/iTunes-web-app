@@ -5,7 +5,7 @@ const fetch = require('node-fetch');
 const bodyParser = require('body-parser');
 const path = require('path');
 //Helmet used to secure the app
- //const helmet = require('helmet');
+ const helmet = require('helmet');
 //Import routes
 const routes = require('./routes/itunes');
 //initialize express
@@ -19,12 +19,13 @@ app.use(bodyParser.urlencoded({
    extended: true
 }));
 app.use(bodyParser.json());
-//app.use(helmet());
-//app.use(
-  // helmet({
-    // contentSecurityPolicy: false,
-   //})
- //);
+//Helmet used to secure the app
+app.use(helmet());
+app.use(
+   helmet({
+     contentSecurityPolicy: false,
+   })
+ );
 
 //Routes
 app.use('/api', routes);
